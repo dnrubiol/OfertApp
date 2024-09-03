@@ -1,0 +1,60 @@
+.ofertapp-comment-row {
+    margin-top: 20px !important;
+    margin-left: 10px !important;
+    width: 100%;
+}
+
+.ofertapp-comment-container {
+    align-items: center;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 20px;
+    background-color: var(--ofertapp-general-background-color);
+    margin-right: 10px !important;
+}
+
+.ofertapp-reaction-container {
+    align-items: center;
+
+    margin-bottom: 10px !important;
+
+    border-style: solid;
+    border-color: #000;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+
+    font-size: 14px !important;
+    overflow-wrap: break-word !important;
+}
+
+.ofertapp-comment-text {
+    font-size: 14px;
+    line-height: 39px;
+    color: var(--ofertapp-general-text-color);
+    margin-bottom: 2px;
+    text-align: left;
+    font-family: 'Inter';
+    font-style: "normal";
+}
+
+.ofertapp-comment-text .ofertapp-comment-contents {
+    padding-left: 10px;
+    display: block !important;
+    overflow-wrap: break-word !important;
+}
+
+.ofertapp-comment-time {
+    font-size: 13px;
+    line-height: 29px;
+    color: var(--ofertapp-border-color);
+    text-align: right;
+    font-family: 'Inter';
+    font-style: "normal";
+}
+
+.ofertapp-reaction-active {
+    background-color: #000;
+    color: #fff;
+}

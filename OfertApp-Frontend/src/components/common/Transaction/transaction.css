@@ -1,0 +1,9 @@
+.ofertapp-table-item {
+    background-color: var(--ofertapp-general-background-color);
+    color: var(--ofertapp-general-text-color);
+    font-size: 12px;
+    font-family: 'Inter';
+    font-style: "normal";
+    font-weight: 400;
+    border-radius: 10px;
+}

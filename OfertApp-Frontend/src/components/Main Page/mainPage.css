@@ -1,0 +1,72 @@
+.ofertapp-page-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--ofertapp-page-title-text-color) !important;
+
+    padding-bottom: 20px;
+    padding-left: 40px;
+
+    margin-bottom: 30px;
+
+    text-align: left;
+    border-bottom-style: solid;
+    border-bottom-color: var(--offertapp-div-lines-color) !important;
+    font-family: 'Inter';
+    font-style: "normal";
+}
+
+.ofertapp-publication-card {
+    background-color: #017C41 !important;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: "normal";
+    margin: 5px;
+    cursor: pointer;
+}
+
+.ofertapp-publication-card:hover {
+    background-color: #047941f0 !important;
+}
+
+.ofertapp-pub-card-support {
+    max-width: 300px;
+    max-height: 400px;
+    padding: 0;
+    margin: 0;
+}
+
+.ofertapp-pub-card-support-media {
+    width: 100%;
+    height: 100%;
+}
+
+.ofertapp-pub-card-info {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    font-family: 'Inter';
+    font-style: "normal";
+    margin-top: 5% !important;
+}
+
+.ofertapp-pub-card-info-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.ofertapp-pub-filter-divider {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #017C41;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ofertapp-no-publications {
+    color: #017C41;
+    font-size: 24px;
+    font-family: 'Inter';
+    font-style: "normal";
+}

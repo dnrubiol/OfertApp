@@ -1,0 +1,75 @@
+.ofertapp-table {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--ofertapp-general-text-color);
+}
+
+.ofertapp-table-header {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #017C41;
+    color: #fff;
+    border-style: solid;
+    text-align: center;
+    border-color: #fff;
+    border-width: 3px;
+    margin: 5px;
+}
+
+.ofertapp-table-row {
+    background-color: var(--ofertapp-general-background-color);
+    color: var(--ofertapp-general-text-color);
+    font-size: 16px;
+    font-family: 'Inter';
+    font-style: "normal";
+    font-weight: 400;
+    border-radius: 10px;
+    border-color: var(--ofertapp-border-color);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.ofertapp-table-row:hover {
+    background-color: var(--ofertapp-alternative-background-color);
+}
+
+/* 
+    Specialized Offers, Admin and Payment info
+*/
+.ofertapp-transaction-info-tooltip>.tooltip-inner {
+    border-style: solid;
+    border-color: #000;
+    background-color: #017C41;
+    border-radius: 10px;
+
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+
+    overflow-wrap: break-word !important;
+}
+
+.ofertapp-small-table-item {
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Inter';
+    font-style: "normal";
+    font-weight: 400;
+    border-radius: 10px;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.ofertapp-small-table-item-alternative {
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Inter';
+    font-style: "normal";
+    font-weight: 1000;
+    border-radius: 10px;
+    border-color: #000;
+    border-style: solid;
+    border-width: 3px;
+}

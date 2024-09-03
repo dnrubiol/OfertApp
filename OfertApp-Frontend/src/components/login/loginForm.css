@@ -1,0 +1,81 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login-page {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+label {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.3rem;
+}
+
+input {
+  width: 100%;
+  border-radius: 92px;
+  border-color: #ccc;
+}
+
+.Link {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none !important;
+}
+
+.login-title {
+  font-weight: bolder;
+  color: var(--ofertapp-page-title-text-color);
+  font-size: 3rem;
+  margin-top: auto;
+}
+
+.group-form {
+  width: 100%;
+  margin-top: 0.4rem;
+}
+
+#login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-links {
+  align-self: flex-start;
+}
+
+#reset-password-login {
+  margin-top: 0;
+}
+
+#register-user-login {
+  margin-top: 0.4rem;
+}
+
+.login-button {
+  width: 100% !important;
+  background-color: #017C41;
+}
+
+.login-button:hover {
+  background-color: #017C41 !important;
+}

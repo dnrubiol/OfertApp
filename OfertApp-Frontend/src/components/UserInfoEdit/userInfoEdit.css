@@ -1,0 +1,41 @@
+.ofertapp-page-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--ofertapp-general-text-color);
+
+    padding-bottom: 20px;
+    padding-left: 40px;
+
+    margin-bottom: 30px;
+
+    text-align: left;
+    border-bottom-style: solid;
+    border-bottom-color: var(--ofertapp-border-color);
+    font-family: 'Inter';
+    font-style: "normal";
+}
+
+.ofertapp-registration-column {
+    padding-right: 50px !important;
+    padding-left: 50px !important;
+    margin: auto;
+}
+
+.ofertapp-inspirational-message {
+    color: #017C41;
+    font-size: 25px;
+
+    font-family: 'Inter';
+    font-style: "normal";
+
+    font-weight: 700;
+}
+
+.ofertapp-div-hline {
+    border-bottom-color: #017C41;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

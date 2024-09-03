@@ -1,0 +1,67 @@
+.ofertapp-offer-base {
+    background-color: var(--ofertapp-general-background-color);
+    border-radius: 10px;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.ofertapp-offer-main {
+    background-color: #017C41;
+    border-radius: 10px;
+}
+
+.ofertapp-offer-container {
+    margin-bottom: 10px;
+    border-style: solid;
+    border-color: var(--ofertapp-border-color);
+    background-color: var(--ofertapp-general-background-color);
+    border-radius: 10px;
+
+}
+
+.ofertapp-offer-text {
+    font-size: 20px;
+    line-height: 39px;
+    color: var(--ofertapp-general-text-color);
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: "normal";
+
+    overflow-wrap: break-word !important;
+}
+
+.ofertapp-offer-price {
+    font-size: 20px;
+    line-height: 39px;
+    color: var(--ofertapp-general-text-color);
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: "normal";
+
+    overflow-wrap: break-word !important;
+}
+
+.ofertapp-offer-time {
+    font-size: 20px;
+    line-height: 29px;
+    color: var(--ofertapp-general-text-color);
+    text-align: right;
+    font-family: 'Inter';
+    font-style: "normal";
+}
+
+.ofertapp-offer-main-text {
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+    text-align: left;
+    font-family: 'Inter';
+    font-style: "normal";
+    font-weight: 600;
+    margin-top: 10px;
+}

@@ -1,0 +1,919 @@
+{
+	"info": {
+		"_postman_id": "9e04e2d2-da04-4bc8-97cd-f75f1dfd152d",
+		"name": "Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25456599",
+		"_collection_link": "https://ofertapp.postman.co/workspace/OfertApp~c758921a-3180-4c6d-a9c6-ef284ba8126c/collection/25456599-9e04e2d2-da04-4bc8-97cd-f75f1dfd152d?action=share&creator=25456599&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\" : \"9svaquero\",\r\n    \"password\" : \"hFK5Oz$S!5\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/auth/login/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwOTIxODA5LCJpYXQiOjE2ODA5MjAwMDksImp0aSI6ImIxMDljMjZiY2M3ZTRlOTI5ZjAwMjMwNjAzZDBmMDQ0IiwidXNlcl9pZCI6MTAwMDgzMzEwOCwidXNlcm5hbWUiOiJlZGdvbnphbGV6ZGkyIiwiZW1haWwiOiJlZGdhcmRhbmllbGdkMTIzQGdtYWlsLmNvbSJ9.ih72QSg5JH-GT9XP5l0YN0cQOVKLhA03jtyTrP5AZy4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/auth/logout/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"logout",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwOTIxODA5LCJpYXQiOjE2ODA5MjAwMDksImp0aSI6ImIxMDljMjZiY2M3ZTRlOTI5ZjAwMjMwNjAzZDBmMDQ0IiwidXNlcl9pZCI6MTAwMDgzMzEwOCwidXNlcm5hbWUiOiJlZGdvbnphbGV6ZGkyIiwiZW1haWwiOiJlZGdhcmRhbmllbGdkMTIzQGdtYWlsLmNvbSJ9.ih72QSg5JH-GT9XP5l0YN0cQOVKLhA03jtyTrP5AZy4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/userinfo/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"userinfo",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "profilePicture",
+							"type": "file",
+							"src": "/D:/UNAL Archivo/Pensamiento Sistemico/tree-736885__480.jpg",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "1000833107",
+							"type": "text"
+						},
+						{
+							"key": "firstName",
+							"value": "Edgar",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Gonzalez",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "testedgd123@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "edgonzalezdi",
+							"type": "text"
+						},
+						{
+							"key": "birthdate",
+							"value": "2002-10-20",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "3005410888",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Cra 18 No 13 12",
+							"type": "text"
+						},
+						{
+							"key": "townId",
+							"value": "2.45",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "paymentAccountType",
+							"value": "NQ",
+							"type": "text"
+						},
+						{
+							"key": "paymentAccountNumber",
+							"value": "3124994899",
+							"type": "text"
+						},
+						{
+							"key": "idenIdType",
+							"value": "CC",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/auth/register/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch Update User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5OTY4NDU0LCJpYXQiOjE2Nzk5NjY2NTQsImp0aSI6IjhkNTAwMDI2YzI4YTQyZmE5ODZmMzE3YWFjMzJiY2YwIiwidXNlcl9pZCI6MTAwMDgzMzEwNywidXNlcm5hbWUiOiJlZGdvbnphbGV6ZGkiLCJlbWFpbCI6InRlc3RlZGdkMTIzQGdtYWlsLmNvbSJ9.dpe4Z1WO6viKV5uwlcFxK8D1tpWr4CnQsoYJwl6UudY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "profilePicture",
+							"type": "file",
+							"src": "/D:/Download/png-transparent-point-art-julia-set-pattern-circle-purple-violet-text-thumbnail.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/userinfo/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"userinfo",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Publications",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/publications/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"publications",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Publications",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyMjA4ODQ2LCJpYXQiOjE2ODIyMDcwNDYsImp0aSI6ImE5YmRlMmM1MjU2ZjQ3MGFhYjYxNmVkYTFlNTQzM2JiIiwidXNlcl9pZCI6MTEsInVzZXJuYW1lIjoiMTFmaWRlbDY5IiwiZW1haWwiOiIxMWFyb2E5M0BleGFtcGxlLm9yZyJ9.-7ywGMgo31Es46ogjn-Z05Yumzl1atDpnCdw7z2zNpM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "refrigerador",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "coca cola",
+							"type": "text"
+						},
+						{
+							"key": "minOffer",
+							"value": "52600",
+							"type": "text"
+						},
+						{
+							"key": "endDate",
+							"value": "2032-10-20T18:00",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": "2fcc61db-c6e8-494d-b06e-c77bb8c39454",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "1000833107",
+							"type": "text"
+						},
+						{
+							"key": "priority",
+							"value": "false",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "supportsFiles",
+							"type": "file",
+							"src": "/C:/Users/edgar/OneDrive/Imágenes/Captura de pantalla 2023-04-09 010557.jpg"
+						},
+						{
+							"key": "supportsFiles",
+							"type": "file",
+							"src": "/C:/Users/edgar/OneDrive/Imágenes/Captura de pantalla 2023-04-09 080715.jpg"
+						},
+						{
+							"key": "supportsDescriptions ",
+							"value": "Ola",
+							"type": "text"
+						},
+						{
+							"key": "supportsDescriptions",
+							"value": "Ola2",
+							"type": "text"
+						},
+						{
+							"key": "supportsTypes",
+							"value": "IMAGE",
+							"type": "text"
+						},
+						{
+							"key": "supportsTypes",
+							"value": "VIDEO",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/publications/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"publications",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Publications Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyMTk1Mzg1LCJpYXQiOjE2ODIxOTM1ODUsImp0aSI6IjJjYzUwNTVjNmIxMzQzMDM4ZWYzOTFmOGQyMDEyZTFhIiwidXNlcl9pZCI6NywidXNlcm5hbWUiOiI3ZXplcXVpZWw1MiIsImVtYWlsIjoiN3RtYXRlb0BleGFtcGxlLmNvbSJ9.y2oqD_ufigl1gRSepIUZPl8F5Z3I5GQc5yw1zEDmroc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "refrigerador",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "coca cola",
+							"type": "text"
+						},
+						{
+							"key": "minOffer",
+							"value": "52600",
+							"type": "text"
+						},
+						{
+							"key": "endDate",
+							"value": "2032-10-20T18:00",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": "2fcc61db-c6e8-494d-b06e-c77bb8c39454",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "1000833107",
+							"type": "text"
+						},
+						{
+							"key": "priority",
+							"value": "false",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "supportsFiles",
+							"type": "file",
+							"src": "/C:/Users/edgar/OneDrive/Imágenes/Captura de pantalla 2023-04-09 010557.jpg",
+							"disabled": true
+						},
+						{
+							"key": "supportsFiles",
+							"type": "file",
+							"src": "/C:/Users/edgar/OneDrive/Imágenes/Captura de pantalla 2023-04-09 080715.jpg"
+						},
+						{
+							"key": "supportsDescriptions ",
+							"value": "Ola",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "supportsDescriptions",
+							"value": "Ola2",
+							"type": "text"
+						},
+						{
+							"key": "supportsTypes",
+							"value": "IMAGE",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "supportsTypes",
+							"value": "VIDEO",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/publications/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"publications",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Make Offer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyMjEwMTY1LCJpYXQiOjE2ODIyMDgzNjUsImp0aSI6IjMxYWIyNTdjMDU1MjQ1NTc4YjNlNTI0Njc2YzRmNjEzIiwidXNlcl9pZCI6MTEsInVzZXJuYW1lIjoiMTFmaWRlbDY5IiwiZW1haWwiOiIxMWFyb2E5M0BleGFtcGxlLm9yZyJ9.j0-HCpl7kCE8xap0Th2b0RJ6MEDFgKUTybZLbxphhXg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\" : 500000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/offers/00f44c13-91e7-481f-b01a-40aceeb996c7/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"offers",
+						"00f44c13-91e7-481f-b01a-40aceeb996c7",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/categories/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"categories",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "electrodomesticos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/categories/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"categories",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Comment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/comments/0c0215cb-b054-4d0e-9972-cd42d2611052/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"comments",
+						"0c0215cb-b054-4d0e-9972-cd42d2611052",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Comment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgzMzI0NTg0LCJpYXQiOjE2ODMzMjI3ODQsImp0aSI6ImMyNGNlMGUxZjgxMTRiMjNhZWQwYjc1YzRkMjcxZmJmIiwidXNlcl9pZCI6MTQsInVzZXJuYW1lIjoiMTRlcm9sZGFuIiwiZW1haWwiOiIxNHZhenF1ZXpyb3NhbHZhQGV4YW1wbGUuY29tIiwidmlwU3RhdGUiOmZhbHNlLCJ2aXBQdWJDb3VudCI6Mn0.wpT6j4ZgYhtf-6NVQeLJUcXbWOwGieeuJBOZFoh1EBA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\" : \"Ola de mar2\",\r\n    \"title\" : \"Cosa2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/comments/100fa19c-bcbd-4daa-900b-9ea85a9ed2a1/0f511e18-7077-409b-973a-7be8e571a00c/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"comments",
+						"100fa19c-bcbd-4daa-900b-9ea85a9ed2a1",
+						"0f511e18-7077-409b-973a-7be8e571a00c",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Reaction",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyODEwMjg1LCJpYXQiOjE2ODI4MDg0ODUsImp0aSI6IjQxYTAwOGM2Y2Y3ZDRhMmFhNTliYmZjMWQyZDdjOGEzIiwidXNlcl9pZCI6MTEsInVzZXJuYW1lIjoiMTFmaWRlbDY5IiwiZW1haWwiOiIxMWFyb2E5M0BleGFtcGxlLm9yZyIsInZpcFN0YXRlIjp0cnVlLCJ2aXBQdWJDb3VudCI6NH0._UGnLlN3IPeOds0vn4Zg9nOZ0KGNvDkIlmkDiaP-ukQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\" : \"LIKE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/reactions/180258ee-5427-4860-9d33-045c50c9d158/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"reactions",
+						"180258ee-5427-4860-9d33-045c50c9d158",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Municipalities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.datos.gov.co/resource/xdk5-pm3f.json",
+					"protocol": "https",
+					"host": [
+						"www",
+						"datos",
+						"gov",
+						"co"
+					],
+					"path": [
+						"resource",
+						"xdk5-pm3f.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Departments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/departments/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"departments",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Municipalities By Department",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/municipalities/department/Antioquia/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"municipalities",
+						"department",
+						"Antioquia",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Municipalities by DepName",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Send Reset password email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"edgardanielgd123@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/auth/recover-password/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"recover-password",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset password email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\" : \"bm3d1o-3736b88e807bde5df1335b4387021ac2\",\r\n    \"user64_id\" : \"MTAwMDgzMzEwOA\",\r\n    \"password\" : \"Ola\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/auth/recover-password/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"recover-password",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transactions",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyMDI5MDQ3LCJpYXQiOjE2ODIwMjcyNDcsImp0aSI6ImNiZDA0YjdkNWJkYzQwZmI5MGY5ODNkNzFmZWNmNTQ4IiwidXNlcl9pZCI6NywidXNlcm5hbWUiOiI3Y2lyb2dhcmF0ZSIsImVtYWlsIjoiN3BhY28wN0BleGFtcGxlLm5ldCJ9.nSUPYQm9dZL91cPXdgm-JIuYcVkSJ3gL23YHx_XTR9E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/transactions/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"transactions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Statistics",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyMjY3MDQ4LCJpYXQiOjE2ODIyNjUyNDgsImp0aSI6ImEzOTg1Njc1OTUyMTQ5YWM4MGZlNDdhNjdlZWU2YTkzIiwidXNlcl9pZCI6MTEsInVzZXJuYW1lIjoiMTFmaWRlbDY5IiwiZW1haWwiOiIxMWFyb2E5M0BleGFtcGxlLm9yZyIsInZpcFN0YXRlIjp0cnVlLCJ2aXBQdWJDb3VudCI6NH0.uaizML3xunNzysfRO4qd6ZzJ8-ntrocbGczyDNzvtFk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/statistics/?viewFinancialBy=quantity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"statistics",
+						""
+					],
+					"query": [
+						{
+							"key": "viewFinancialBy",
+							"value": "quantity"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Notifications",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg0Mjk1MzM1LCJpYXQiOjE2ODQyOTM1MzUsImp0aSI6ImZkYjc4NDVmYzc0ZjRjMmZhZmIzNTgxZGNiYzVhMjZhIiwidXNlcl9pZCI6OSwidXNlcm5hbWUiOiI5c3ZhcXVlcm8iLCJlbWFpbCI6IjliZW5hdmlkZXNwYWNhQGV4YW1wbGUubmV0IiwidmlwU3RhdGUiOnRydWUsInZpcFB1YkNvdW50Ijo3fQ.KmvS0uViYbj7jzA9AgSQEj5g49va1rPSyX3tkbTQaVY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/notifications",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

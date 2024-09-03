@@ -1,0 +1,153 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+#root {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #2bc2a9;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.suggestion-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 5px solid #ccc;
+  border-top: none;
+
+}
+
+.suggestion-list li {
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--ofertapp-general-text-color);
+}
+
+.suggestion-list li:hover {
+  background-color: var(--ofertapp-alternative-background-color);
+}
+
+.form-div {
+  width: max(500px, 40vw);
+  max-height: 3000px;
+  border-width: 0px 10px 0px 10px;
+  border-image: repeating-linear-gradient(90deg,
+      var(--ofertapp-inverse-background-color-degraded) 0%,
+      var(--ofertapp-inverse-background-color-degraded2) 2%,
+      var(--ofertapp-inverse-background-color-degraded) 4%);
+  border-image-slice: 9;
+  border-style: solid;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.form-label {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: large;
+}
+
+.form-control {
+  border-radius: 50px !important;
+  border-style: solid !important;
+  border-color: var(--ofertapp-border-color) !important;
+}
+
+.btn-form {
+  background-color: #017C41 !important;
+  font-family: "Inter" !important;
+  font-weight: bold !important;
+  font-size: x-large !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 10px !important;
+  max-width: 200px !important;
+}
+
+.ofertapp-page-link {
+  background-color: var(--ofertapp-general-background-color) !important;
+  color: #017C41 !important;
+}
+
+.ofertapp-page-link:hover {
+  background-color: #017C41 !important;
+  color: #fff !important;
+}
+
+.ofertapp-page-item-active.ofertapp-page-link {
+  background-color: #017C41 !important;
+  color: #fff !important;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: #017C41;
+}
+
+.error-div {
+  margin-bottom: 0 !important;
+  color: red;
+}
+
+.error-input {
+  border-color: red !important;
+  background-image: url("../src/images/errorIcon.png");
+  background-size: 6%;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.general-text {
+  color: var(--ofertapp-general-text-color) !important;
+}
+
+.general-div-hover:hover {
+  background-color: var(--ofertapp-inverse-background-color) !important;
+}
+
+.general-text-hover:hover {
+  color: var(--ofertapp-inverse-text-color) !important;
+}
+
+.general-div {
+  background-color: var(--ofertapp-general-background-color) !important;
+}

@@ -1,0 +1,31 @@
+.ofertapp-file-upload {
+    background-color: var(--ofertapp-general-background-color);
+    border-radius: 10px;
+    border-color: #017C41;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.ofertapp-file-upload::file-selector-button {
+    background-color: #017C41;
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
+}
+
+.ofertapp-upload-div {
+    border-color: var(--ofertapp-border-color);
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.ofertapp-file-upload::file-selector-button:hover {
+    background-color: #017C41;
+}
+
+.label-style {
+    font-family: 'Inter';
+    font-style: "normal";
+    margin-bottom: 30px;
+}

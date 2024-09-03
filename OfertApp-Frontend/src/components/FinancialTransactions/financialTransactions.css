@@ -1,0 +1,54 @@
+.ofertapp-page-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--ofertapp-page-title-text-color);
+
+    padding-bottom: 20px;
+    padding-left: 40px;
+
+    margin-bottom: 30px;
+
+    text-align: left;
+    border-bottom-style: solid;
+    border-bottom-color: var(--ofertapp-border-color);
+    font-family: 'Inter';
+    font-style: "normal";
+}
+
+.ofertapp-page-subtitle {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--ofertapp-page-title-text-color);
+
+    padding-bottom: 10px;
+
+    text-align: center;
+    font-family: 'Inter';
+    font-style: "normal";
+}
+
+.ofertapp-tab-choice {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #017C41;
+    color: #FFFFFF;
+
+    padding-left: 40px;
+
+    margin-bottom: 30px;
+    text-align: center;
+
+    font-family: 'Inter';
+    font-style: "normal";
+
+    cursor: pointer;
+}
+
+.ofertapp-tab-choice:hover {
+    font-size: 28px;
+}
+
+.ofertapp-tab-choice.active {
+    background-color: var(--ofertapp-general-background-color);
+    color: #017C41;
+}

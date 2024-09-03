@@ -1,0 +1,96 @@
+.ofertapp-link-base {
+    padding: 0px !important;
+    color: var(--fontColor);
+    text-decoration: none;
+    font-size: var(--fontSize);
+    font-weight: 600;
+    align-self: center;
+
+    font-family: 'Inter';
+    font-style: "normal";
+
+    margin: auto;
+
+    overflow-wrap: break-word !important;
+}
+
+.ofertapp-link-common {
+    padding: 0px !important;
+    color: #2AC11D;
+    text-decoration: none;
+    font-size: var(--fontSize);
+    font-weight: 600;
+
+    font-family: 'Inter';
+    font-style: "normal";
+
+    align-self: center;
+    margin: auto;
+
+    overflow-wrap: break-word !important;
+}
+
+.ofertapp-reputation {
+    background-color: rgb(var(--reputationR),
+            var(--reputationG),
+            0) !important;
+    color: #fff;
+    font-size: var(--fontSize);
+    border-radius: 10px;
+
+    font-family: 'Inter';
+    font-style: "normal";
+}
+
+.ofertapp-user-info-tooltip>.tooltip-inner {
+    border-style: solid;
+    border-color: #000;
+    background-color: #017C41;
+    border-radius: 10px;
+
+    overflow-wrap: break-word !important;
+}
+
+.ofertapp-user-info-tooltip .ofertapp-user-info-profile {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0px;
+
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.ofertapp-user-info-tooltip .ofertapp-user-info-profile .ofertapp-user-info-profile-image {
+    border-radius: 10px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    max-height: 200px !important;
+
+    background-color: #fff;
+}
+
+.ofertapp-user-info-tooltip .ofertapp-user-info-profile .ofertapp-user-info-profile-text {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #fff;
+    color: #000;
+    text-align: left;
+    margin: auto;
+
+    overflow-wrap: break-word !important;
+}
+
+.ofertapp-user-info-text {
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #000;
+    color: #fff;
+    border-style: solid;
+    border-color: #017C41;
+    text-align: center;
+    z-index: 1;
+    margin: auto;
+
+    overflow-wrap: break-word !important;
+}

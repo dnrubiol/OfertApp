@@ -1,0 +1,7 @@
+.ofertapp-admin-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--ofertapp-general-text-color);
+}
